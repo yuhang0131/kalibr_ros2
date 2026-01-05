@@ -1,0 +1,24 @@
+# Camera Chain Configuration Example for Kalibr ROS2
+# This file contains camera intrinsics and extrinsics
+
+cam0:
+  camera_model: pinhole
+  intrinsics: [458.654, 457.296, 367.215, 248.375]  # [fx, fy, cx, cy]
+  distortion_model: radtan
+  distortion_coeffs: [-0.28340811, 0.07395907, 0.00019359, 1.76187114e-05]  # [k1, k2, p1, p2]
+  resolution: [752, 480]  # [width, height]
+  rostopic: /cam0/image_raw
+
+# Optional: second camera (stereo setup)
+# cam1:
+#   camera_model: pinhole
+#   intrinsics: [457.587, 456.134, 379.999, 255.238]
+#   distortion_model: radtan
+#   distortion_coeffs: [-0.28368365, 0.07451284, -0.00010473, -3.55590700e-05]
+#   resolution: [752, 480]
+#   rostopic: /cam1/image_raw
+#   T_cn_cnm1:  # Transformation from cam0 to cam1
+#     - [0.9995250378696743, 0.029615343885863205, -0.008522328211654736, 0.04727988224914392]
+#     - [-0.029519896018581932, 0.9995773894776806, 0.0023379960950073977, -0.0002826630639841587]
+#     - [0.00886185832504485, -0.0019027239138111523, 0.9999606062074444, -0.00000501]
+#     - [0.0, 0.0, 0.0, 1.0]

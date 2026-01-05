@@ -1,0 +1,18 @@
+# Import the numpy to Eigen type conversion.
+import numpy_eigen
+import os
+
+isCompiled = False
+pathToSo = os.path.dirname(os.path.realpath(__file__))
+if os.path.isfile(os.path.join(pathToSo,"libincremental_calibration_python.so")):    
+    import aslam_backend
+    # Import the the C++ exports from your package library.
+    from .libincremental_calibration_python import *
+    # Import other files in the directory
+    # from mypyfile import *
+    isCompiled = True
+else:
+    print("Warning: the package incremental_calibration_python is not compiled.")
+    PACKAGE_IS_NOT_COMPILED = True;
+
+

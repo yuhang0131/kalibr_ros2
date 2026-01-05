@@ -1,0 +1,16 @@
+#Accelerometer
+accelerometer_noise_density: 0.008   # [m/s^2/sqrt(Hz)]
+accelerometer_random_walk: 0.0003    # [m/s^3/sqrt(Hz)]
+
+#Gyroscope
+gyroscope_noise_density: 0.0005      # [rad/s/sqrt(Hz)]
+gyroscope_random_walk: 5.0e-06       # [rad/s^2/sqrt(Hz)]
+
+#IMU update rate
+update_rate: 200.0                   # [Hz]
+
+#IMU ROS topic (second IMU)
+rostopic: /imu1/data
+
+#IMU time offset (initial guess, will be optimized)
+time_offset: 0.0                     # [s]

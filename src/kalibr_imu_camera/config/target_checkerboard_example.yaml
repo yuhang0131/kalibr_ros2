@@ -1,0 +1,15 @@
+# Checkerboard Target Configuration for Kalibr ROS2
+
+target_type: 'checkerboard'
+
+# Number of internal corners in columns
+targetCols: 8
+
+# Number of internal corners in rows
+targetRows: 6
+
+# Distance between row corners [m]
+rowSpacingMeters: 0.06
+
+# Distance between column corners [m]
+colSpacingMeters: 0.06

@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>kalibr_imu_camera</name>
+  <version>1.0.0</version>
+  <description>Kalibr ROS2 - Visual-Inertial Calibration Package</description>
+  <maintainer email="your@email.com">Your Name</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <!-- Python dependencies -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>rosbag2_py</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-matplotlib</exec_depend>
+  <exec_depend>python3-scipy</exec_depend>
+  <exec_depend>python3-opencv</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
+
+  <!-- Internal dependencies - C++ libraries -->
+  <depend>sm_common</depend>
+  <depend>sm_random</depend>
+  <depend>sm_logging</depend>
+  <depend>sm_boost</depend>
+  <depend>sm_timing</depend>
+  <depend>sm_opencv</depend>
+  <depend>sm_property_tree</depend>
+  <depend>sm_matrix_archive</depend>
+  <depend>sm_eigen</depend>
+  <depend>sm_kinematics</depend>
+  
+  <depend>aslam_time</depend>
+  <depend>aslam_cameras</depend>
+  <depend>aslam_cv_backend</depend>
+  <depend>aslam_cv_error_terms</depend>
+  <depend>aslam_cv_serialization</depend>
+  <depend>aslam_imgproc</depend>
+  
+  <depend>aslam_backend</depend>
+  <depend>aslam_backend_expressions</depend>
+  <depend>sparse_block_matrix</depend>
+  
+  <depend>aslam_splines</depend>
+  <depend>bsplines</depend>
+  
+  <depend>incremental_calibration</depend>
+  <depend>ethz_apriltag2</depend>
+
+  <!-- Python binding dependencies -->
+  <depend>python_module</depend>
+  <depend>numpy_eigen</depend>
+  <depend>sm_python</depend>
+  <depend>aslam_cameras_april</depend>
+  <depend>aslam_cv_python</depend>
+  <depend>aslam_cv_backend_python</depend>
+  <depend>aslam_backend_python</depend>
+  <depend>aslam_splines_python</depend>
+  <depend>bsplines_python</depend>
+  <depend>incremental_calibration_python</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

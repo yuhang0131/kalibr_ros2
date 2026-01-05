@@ -1,0 +1,16 @@
+# AprilGrid Target Configuration for Kalibr ROS2
+
+target_type: 'aprilgrid'
+
+# Number of tags in columns
+tagCols: 6
+
+# Number of tags in rows
+tagRows: 6
+
+# Size of one AprilTag [m]
+tagSize: 0.088
+
+# Spacing between tags as a fraction of tagSize
+# spacing = tagSpacing * tagSize
+tagSpacing: 0.3
